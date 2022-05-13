@@ -3,6 +3,20 @@ import styled from "styled-components";
 export const Container = styled.header`
   background: var(--blue);
 `;
+export const LogoContainer = styled.div`
+  display: flex;
+
+  align-items: center;
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 0.3rem;
+    padding-right: 1rem;
+  }
+`;
+
 export const Content = styled.div`
   max-width: 1120px;
   margin: 0 auto;
