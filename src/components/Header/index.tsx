@@ -1,7 +1,14 @@
 import logoImg from "../../assets/logo.svg";
+
 import { Container, Content, LogoContainer } from "./styles";
 
-export const Header = (): JSX.Element => {
+type HeaderPros = {
+  onOpenNewTransactionModal: () => void;
+};
+
+export const Header = ({
+  onOpenNewTransactionModal,
+}: HeaderPros): JSX.Element => {
   return (
     <Container>
       <Content>
@@ -10,7 +17,9 @@ export const Header = (): JSX.Element => {
           <img src={logoImg} alt="dt Money" />
         </LogoContainer>
 
-        <button>Nova transação</button>
+        <button type="button" onClick={onOpenNewTransactionModal}>
+          Nova transação
+        </button>
       </Content>
     </Container>
   );

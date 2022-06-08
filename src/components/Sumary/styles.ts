@@ -25,7 +25,7 @@ export const Container = styled.div`
       font-weight: 500;
     }
     &.highlight-background {
-      background: var(--blue-light);
+      background: #33b878;
       color: #fff;
     }
   }

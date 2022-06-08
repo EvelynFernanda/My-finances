@@ -39,9 +39,43 @@ export const GlobalStyle = createGlobalStyle`
     }
     button{
         cursor: pointer;
+        border: none;
+        background: none;
     }
     [disabled]{
         opacity: 0.6;
         cursor: not-allowed;
     }
+
+    .react-modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+   
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .react-modal-content {
+      display: flex;
+      flex-direction: column;
+    width: 100%;
+    max-width: 36rem;
+    background: var(--background);
+    padding: 48px;
+    position: relative;
+    border-bottom: 3.84px;
+    }
+    .react-modal-close {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border: 0;
+    background: transparent;
+  }
 `;
